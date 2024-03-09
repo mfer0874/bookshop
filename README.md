@@ -1,2 +1,0 @@
-# bookshop
-SAP CAP exercise
