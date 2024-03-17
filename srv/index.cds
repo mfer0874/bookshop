@@ -1,4 +1,4 @@
-using from './Catalog-service';
+using from './catalog-service';
 
 
 annotate CatalogService.Books with @(

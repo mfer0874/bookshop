@@ -17,10 +17,13 @@
         }
     },
     "sap.ui5": {
-        "dependencies": {
-            "minUI5Version": "1.60",
+        "flexEnabled": true,
+        "dependencies": {         
+            "minUI5Version": "1.96.0",
             "libs": {
-
+                "sap.fe.templates": {},
+                "sap.ui.core": {},
+                "sap.m": {}                
             }
         },
         "models": {
@@ -63,6 +66,7 @@
                     "options": {
                         "settings": {
                             "entitySet": "Books",
+                            "initialLoad": true,
                             "navigation": {
                                 "Books": {
                                     "detail": {
@@ -85,5 +89,22 @@
                 }
             }
         }
+    },
+    "contentDensities": {
+        "compact": true,
+        "cozy": true
+      },    
+    "sap.ui": {
+        "technology": "UI5",
+        "fullWidth": true,
+        "deviceTypes": {
+          "desktop": true,
+          "tablet": true,
+          "phone": true
+        }
+    },
+    "sap.fiori": {
+      "registrationIds": [],
+      "archeType": "transactional"
     }
 }
