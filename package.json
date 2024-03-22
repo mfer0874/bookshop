@@ -7,6 +7,8 @@
   "private": true,
   "dependencies": {
     "@sap/cds": "^7",
+    "@sap/cds-hana": "^2",
+    "@sap/hdi-deploy": "^5.0.1",
     "express": "^4"
   },
   "devDependencies": {
@@ -19,7 +21,7 @@
   "cds": {
     "requires": {
       "db": {
-        "kind": "sqlite",
+        "kind": "sql",
         "credentials": {
           "database": "bookshop.db"
         }
